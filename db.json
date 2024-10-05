@@ -1,0 +1,158 @@
+{
+  "cliente": [
+    {
+      "id": "1",
+      "nome": "Gustavo Carvalho",
+      "email": "gustavocarvalho.gc79@gmail.com",
+      "numero_contato": "77999412711",
+      "data_nascimento": "2001-02-02"
+    },
+    {
+      "id": "2",
+      "nome": "Ariane Nona",
+      "emai": "arigabi2712@gmail.com",
+      "numero_contato": "77999099263",
+      "data_nascimento": "1984-12-27"
+    },
+    {
+      "id": "3",
+      "nome": "Maria alice",
+      "email": "mariaalice1502@gmail.com",
+      "numero_contato": "77999001506",
+      "data_nascimento": "2023-06-15"
+    },
+    {
+      "id": "4",
+      "nome": "Cliente PATCH-teste",
+      "email": "clienteteste@gmail.com",
+      "numero_contato": "7700000000",
+      "data_nascimento": "2000-05-22"
+    }
+  ],
+  "produto": [
+    {
+      "id": "1",
+      "nome": "celular xiaomi poco x5 pro",
+      "tipo": "eletrônico",
+      "valor": 2099.5
+    },
+    {
+      "id": "2",
+      "nome": "fone de ouvido redmidots2",
+      "tipo": "eletrônico",
+      "valor": 159.9
+    },
+    {
+      "id": "3",
+      "nome": "Mouse logitech sem fio ",
+      "tipo": "eletrônico",
+      "valor": 298.77
+    },
+    {
+      "id": "4",
+      "nome": "jaqueta de couro",
+      "tipo": "Vestuário",
+      "valor": 250.39
+    },
+    {
+      "id": "5",
+      "nome": "boné ellus origins",
+      "tipo": "Vestuário",
+      "valor": 120.45
+    },
+    {
+      "id": "6",
+      "nome": "camisa social aramis",
+      "tipo": "Vestuário",
+      "valor": 280.98
+    },
+    {
+      "id": "7",
+      "nome": "batata ruffles 300g",
+      "tipo": "Alimentos",
+      "valor": 15.39
+    },
+    {
+      "id": "8",
+      "nome": "salgadinho doritos 200g",
+      "tipo": "Alimentos",
+      "valor": 17.8
+    },
+    {
+      "id": "9",
+      "nome": "salgadinho fandangos de presunto ",
+      "tipo": "Alimentos",
+      "valor": 10.29
+    },
+    {
+      "id": "10",
+      "nome": "copo Stanley",
+      "tipo": "Utilitário",
+      "valor": 50
+    }
+  ],
+  "pedido": [
+    {
+      "id": "1",
+      "cliente_id": 1,
+      "data_pedido": "2024-10-03",
+      "status": "Em andamento"
+    },
+    {
+      "id": "2",
+      "cliente_id": 2,
+      "data_pedido": "2024-10-03",
+      "status": "Concluído"
+    },
+    {
+      "id": "3",
+      "cliente_id": 1,
+      "data_pedido": "2024-10-03",
+      "status": "Cancelado"
+    }
+  ],
+  "pedidoproduto": [
+    {
+      "id": "1",
+      "pedido_id": 1,
+      "produto_id": 1,
+      "quantidade": 2
+    },
+    {
+      "id": "2",
+      "pedido_id": 1,
+      "produto_id": 2,
+      "quantidade": 1
+    },
+    {
+      "id": "3",
+      "pedido_id": 2,
+      "produto_id": 1,
+      "quantidade": 5
+    },
+    {
+      "id": "4",
+      "pedido_id": 2,
+      "produto_id": 5,
+      "quantidade": 1
+    },
+    {
+      "id": "5",
+      "pedido_id": 3,
+      "produto_id": 7,
+      "quantidade": 2
+    },
+    {
+      "id": "6",
+      "pedido_id": 3,
+      "produto_id": 5,
+      "quantidade": 2
+    },
+    {
+      "id": "7",
+      "pedido_id": 3,
+      "produto_id": 9,
+      "quantidade": 1
+    }
+  ]
+}

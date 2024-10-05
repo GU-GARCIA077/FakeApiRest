@@ -1,0 +1,93 @@
+### CLIENTES ###
+
+### Requisição GET para pegar todos os clientes:
+GET http://localhost:3000/cliente
+Content-Type: application/json
+
+###Requisição GET para buscar cliente específico:
+
+GET http://localhost:3000/cliente/1
+Content-Type: application/json
+
+###Requisição POST para inserir novo produto
+
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "id": "4",
+    "nome":"Cliente teste",
+    "email":"clienteteste@gmail.com",
+    "numero_contato":"7700000000",
+    "data_nascimento":"2000-05-22"
+}
+### Requisição de alteração de dados (PUT)
+PUT  http://localhost:3000/cliente/4
+Content-Type: application/json
+
+{
+    "id": "4",
+    "nome":"Cliente PUT-teste",
+    "email":"clienteteste@gmail.com",
+    "numero_contato":"7700000000",
+    "data_nascimento":"2000-05-22"
+}
+
+### Requisição de alteração de dados de apenas um campo :
+PATCH  http://localhost:3000/cliente/4
+Content-Type: application/json
+
+{
+    "nome":"Cliente PATCH-teste"
+}
+
+### Excluir um Cliente :
+DELETE http://localhost:3000/cliente/4
+Content-Type: application/json
+
+
+### PRODUTOS ###
+
+### Requisição GET para pegar todos os produtos
+GET  http://localhost:3000/produto HTTP/1.1
+Content-Type:  application/json
+
+### Requisição GET para buscar produto específico
+GET  http://localhost:3000/produto/5 HTTP/1.1
+Content-Type:  application/json
+
+###Requisição POST para inserir novo produto
+
+POST http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 10,
+    "nome":"copo Stanley",
+    "tipo":"Utilitário",
+    "valor":50.00
+}
+
+### Requisição de alteração de dados (PUT)
+PUT  http://localhost:3000/produto/10
+Content-Type: application/json
+
+{
+    "id": 10,
+    "nome":"copo Stanley PUT TESTES",
+    "tipo":"Utilitário",
+    "valor":50.00
+}
+
+### Requisição de alteração de dados de apenas um campo :
+PATCH http://localhost:3000/produto/10
+Content-Type: application/json
+
+{
+    "valor": 74.95
+}
+
+### Excluir um registro:
+DELETE http://localhost:3000/produto/10
+Content-Type: application/json
+
