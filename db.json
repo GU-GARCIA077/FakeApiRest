@@ -10,7 +10,7 @@
     {
       "id": "2",
       "nome": "Ariane Nona",
-      "emai": "arigabi2712@gmail.com",
+      "email": "arigabi2712@gmail.com",
       "numero_contato": "77999099263",
       "data_nascimento": "1984-12-27"
     },
@@ -109,6 +109,12 @@
       "cliente_id": 1,
       "data_pedido": "2024-10-03",
       "status": "Cancelado"
+    },
+    {
+      "id": "4",
+      "cliente_id": 4,
+      "data_pedido": "2024-10-07",
+      "status": "Concluído"
     }
   ],
   "pedidoproduto": [
@@ -153,6 +159,12 @@
       "pedido_id": 3,
       "produto_id": 9,
       "quantidade": 1
+    },
+    {
+      "id": "8",
+      "pedido_id": 1,
+      "produto_id": 9,
+      "quantidade": 15
     }
   ]
 }

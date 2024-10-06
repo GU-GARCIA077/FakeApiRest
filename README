@@ -1,0 +1,11 @@
+SIMULANDO API COM JSON SERVER :
+
+¹° = NPM INSTALL -G JSON-SERVER
+2° =CRIAR ARQUIVO DB.JSON
+3° = JSON-SERVER --WATCH DB.JSON --PORT 3000
+
+
+para reiniciar a api no cmd:
+
+netstat -ano | findstr :3000  (listar tudo que consome a porta)
+taskkill /PID xxxxx /F (encerrar o consumo pelo PID)

@@ -9,7 +9,7 @@ Content-Type: application/json
 GET http://localhost:3000/cliente/1
 Content-Type: application/json
 
-###Requisição POST para inserir novo produto
+###Requisição POST para inserir novo cliente
 
 POST http://localhost:3000/cliente
 Content-Type: application/json
@@ -87,7 +87,103 @@ Content-Type: application/json
     "valor": 74.95
 }
 
-### Excluir um registro:
+### Excluir um registro de produto:
 DELETE http://localhost:3000/produto/10
 Content-Type: application/json
 
+### PEDIDO ###
+
+### Requisição GET para buscar todos os pedidos:
+
+GET http://localhost:3000/pedido
+Content-Type: application/json
+
+###Requisição Get para buscar pedido específico:
+
+GET  http://localhost:3000/pedido/1
+Content-Type: application/json
+
+### requisição POST para inserir novo pedido:
+
+POST http://localhost:3000/pedido 
+Content-Type: application/json
+
+    {
+        "id": "4",
+        "cliente_id":4,
+        "data_pedido":"2024-10-06",
+        "status": "Em andamento"
+    }
+
+###requisição PUT para atualizar todos os campos do pedido:
+
+PUT http://localhost:3000/pedido/4
+Content-Type: application/json
+
+    {
+        "id": "4",
+        "cliente_id":4,
+        "data_pedido":"2024-10-07",
+        "status": "Em andamento teste put"
+    }
+
+###requisição patch para atualizar status pedido:
+PATCH http://localhost:3000/pedido/4
+Content-Type: application/json
+
+{
+    "status":"Concluído"
+}
+
+### Requisição para excluir pedido:
+
+DELETE http://localhost:3000/pedido/4
+Content-Type: application/json
+
+### PEDIDOPRODUTO ###
+
+###Requisição para buscar todos os produtos de todos os pedidos:
+
+GET  http://localhost:3000/pedidoproduto
+Content-Type: application/json
+
+###requisição para buscar todos os produtos de um pedido específico:
+GET http://localhost:3000/pedidoproduto?pedido_id=1
+
+###requisição para incluir produtos no pedido:
+
+POST http://localhost:3000/pedidoproduto
+Content-Type: application/json
+
+{
+    "id":8,
+    "pedido_id":1,
+    "produto_id":10,
+    "quantidade":10
+}
+
+### Requisição put para atualizar todos os campos do produto no pedido:
+
+PUT http://localhost:3000/pedidoproduto/8
+Content-Type: application/json
+
+{
+    "id":8,
+    "pedido_id":1,
+    "produto_id":9,
+    "quantidade":20
+}
+
+### Requisição para atualizar a quantidade dos produtos:
+
+PATCH http://localhost:3000/pedidoproduto/8
+Content-Type: application/json
+
+{
+    "quantidade":15
+}
+
+###requisição para deletar item no pedido :
+
+DELETE http://localhost:3000/localhost:3000/pedidoproduto/8
+Content-Type: application/json
